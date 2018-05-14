@@ -5,7 +5,7 @@
 ### subject
 >  Notification From BC Transportation Fuels Reporting System  
 ### body 
-> You have received a notification. Please log into the TFRS system to view the details and to manage your notification settings.
+> You have received a notification. Please log in to the TFRS system to view the details and to manage your notification settings.
 
 ##sms text
 ### body 
@@ -15,7 +15,7 @@
 
 >  We're sorry.
 >
->  We can't figure out what you are requesting. You might have a typo...
+>  Your browser sent a request that the server could not understand. The URL might have a typo, or the file size might be too large. 
 
 The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing).[[31\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-rfc7231-400-32)
 
@@ -31,9 +31,7 @@ Note: Some sites issue HTTP 401 when an [IP address](https://en.wikipedia.org/wi
 
 ## 403[ Forbidden](https://en.wikipedia.org/wiki/HTTP_403)
 
-> Hello,
->
-> Welcome to the Transportation Fuel Reporting System. It looks like you don't have an account setup yet, or that you are trying to access a page that you do not have permissions to see.
+> Welcome to the Transportation Fuel Reporting System. It looks like you don't have an account set up yet, or that you are trying to access a page that you do not have permission to see.
 >
 > You will need to <a href="#">contact us</a> for help 
 
@@ -41,17 +39,17 @@ The request was valid, but the server is refusing action. The user might not hav
 
 ## 404 Not Found
 
-> We give you credit for trying to find a valid page, but this is not it.  
+> The requested page could not be found.  
 >
-> to trade this page for a valid one click <a href="/">here</a>  
+> To trade this page for a valid one click <a href="/">here</a>  
 >
-> or learn more about Credit Validation <a href="http://www.gov.bc.ca/lowcarbonfuels/">here</a>
+> or learn more about the Renewable and Low Carbon Fuel Requirements Regulation <a href="http://www.gov.bc.ca/lowcarbonfuels/">here</a>
 
 The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.[[36\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-37)
 
 ## 405 Method Not Allowed
 
-> It looks like you are trying to be creative in how you interact with our system.  Unfortunately you are trying to use a request method that is not allowed.
+> It looks like you are trying to be creative in how you interact with our system. Unfortunately, you are trying to use a request method that is not allowed.
 
 A request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via [POST](https://en.wikipedia.org/wiki/POST_(HTTP)), or a PUT request on a read-only resource.
 
@@ -59,7 +57,7 @@ A request method is not supported for the requested resource; for example, a GET
 
 > We're sorry.
 >
-> We thought you left. Your request will need to start over.  Perhaps try to get all your information ready before you start the process of submitting your request.
+> The server timed out waiting for your request. Perhaps try to get all your information ready before you start the process of submitting your request.
 
 The server timed out waiting for the request. According to HTTP specifications: "The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time."[[39\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-40)
 
@@ -67,7 +65,7 @@ The server timed out waiting for the request. According to HTTP specifications: 
 
 > We're sorry
 >
-> That type of file won't work. Can you try one of the other file types that we do support?
+> That type of file is not supported. Please try one of the other file types that we do support.
 
 The request entity has a [media type](https://en.wikipedia.org/wiki/Internet_media_type) which the server or resource does not support. For example, the client uploads an image as [image/svg+xml](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics), but the server requires that images use a different format.
 
@@ -75,7 +73,7 @@ The request entity has a [media type](https://en.wikipedia.org/wiki/Internet_med
 
 > We're sorry
 >
-> Looks like you are trying to submit some information that we can't process.
+> It looks like you are trying to submit some information that we can't process.
 
 The 422 (Unprocessable Entity) status code means the server understands the content type of the request entity (hence a 415(Unsupported Media Type) status code is inappropriate), and the syntax of the request entity is correct (thus a 400 (Bad Request) status code is inappropriate) but was unable to process the contained instructions. For example, this error condition may occur if an XML request body contains well-formed (i.e., syntactically correct), but semantically erroneous, XML instructions.
 
@@ -83,15 +81,13 @@ The 422 (Unprocessable Entity) status code means the server understands the cont
 
 > We're sorry.
 >
-> It looks like our system took an unexpected break. We have been notified and will look into it.
+> It looks like our system took an unexpected break. We have been notified and will look into it. Please try again later. 
 
 A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.[[57\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-58)
 
 ## 501 Not Implemented
 
-> We appreciate your willingness to try new things.
->
-> But this request method is not quite ready yet. 
+> Unfortunately, you are trying to use a request method that is not allowed at this time. 
 
 The server either does not recognize the request method, or it lacks the ability to fulfil the request. Usually this implies future availability (e.g., a new feature of a web-service API).[[58\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-59)
 
@@ -99,7 +95,7 @@ The server either does not recognize the request method, or it lacks the ability
 
 > We're sorry.
 >
-> While trying to process your request, we got an invalid response from another computer.
+> The server encountered an error and could not complete your request. Please try again later. 
 
 The server was acting as a [gateway](https://en.wikipedia.org/wiki/Gateway_(telecommunications)) or proxy and received an invalid response from the upstream server.[[59\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-60)
 
@@ -107,7 +103,7 @@ The server was acting as a [gateway](https://en.wikipedia.org/wiki/Gateway_(tele
 
 > We're sorry.
 >
-> Our system felt over worked and decided to take a coffee break.  We'll get it back up and running soon.
+> Our system is currently unavailable. Please try again later. 
 
 The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.[[60\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-61)
 
@@ -115,6 +111,6 @@ The server is currently unavailable (because it is overloaded or down for mainte
 
 > We're sorry.
 >
-> The system had to wait too long, and stopped trying to load the next page.
+> It looks like our system timed out while waiting for a response from another server. Please try again later. 
 
 The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.[[61\]](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#cite_note-62)
